@@ -5,20 +5,23 @@ import usersRoutes from './routes/usersRoutes.js';
 import projetsRoutes from './routes/projetsRoutes.js';
 import logosRoutes from './routes/logosRoutes.js';
 import categoryRoutes from './routes/categoryRoutes.js';
+import jeuxRoutes from  './routes/jeuxRoutes.js';
 
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use('/api/category', categoryRoutes);
 app.use('/api/logos', logosRoutes);
 app.use('/api/projets',projetsRoutes);
 app.use('/api/users',usersRoutes);
+app.use('/api/jeux',jeuxRoutes);
 // Déclaration de la fonction initDatabase avant de l'appeler
 
 // Synchroniser la base de données
-sequelize.sync()
+sequelize.sync({alter:true})
 .then(() => {
   console.log("Database synced");
 })

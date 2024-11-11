@@ -19,6 +19,10 @@ const User = sequelize.define('User', {
   motDePasse: {
     type: DataTypes.STRING,
     allowNull: false
+  },
+  RoleId: { // Correspond à la base de données
+    type: DataTypes.BIGINT,
+    allowNull: true
   }
 }, {
   tableName: 'users',
