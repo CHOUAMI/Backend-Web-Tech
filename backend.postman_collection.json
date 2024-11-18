@@ -303,6 +303,55 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get sit web",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/siteweb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"siteweb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post siteweb",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Titre\": \"Nouveau site web\",\r\n    \"description\": \"Ceci est un nouveau site web\",\r\n    \"ProjetId\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/siteweb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"siteweb"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
