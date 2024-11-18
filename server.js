@@ -6,7 +6,8 @@ import projetsRoutes from './routes/projetsRoutes.js';
 import logosRoutes from './routes/logosRoutes.js';
 import categoryRoutes from './routes/categoryRoutes.js';
 import jeuxRoutes from  './routes/jeuxRoutes.js';
-
+import sitewebRoutes from './routes/sitewebRoutes.js';
+import rolesRoutes from './routes/rolesRoutes.js';
 
 dotenv.config();
 
@@ -18,6 +19,8 @@ app.use('/api/logos', logosRoutes);
 app.use('/api/projets',projetsRoutes);
 app.use('/api/users',usersRoutes);
 app.use('/api/jeux',jeuxRoutes);
+app.use('/api/roles',rolesRoutes);
+app.use('/api/siteweb', sitewebRoutes);
 // Déclaration de la fonction initDatabase avant de l'appeler
 
 // Synchroniser la base de données
