@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "cb9443cb-c398-4c9e-bd7e-3ff4045a66fd",
+		"_postman_id": "3e65680e-694d-488f-8aa1-20dfb5512b09",
 		"name": "backend",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "37434683"
@@ -356,7 +356,10 @@
 			"name": "login",
 			"request": {
 				"method": "POST",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": ""
+				}
 			},
 			"response": []
 		}
