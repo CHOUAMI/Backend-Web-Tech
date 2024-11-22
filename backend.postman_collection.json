@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "64c541e3-96d9-4aaa-9ab2-7c1a36b585a4",
+		"_postman_id": "cb9443cb-c398-4c9e-bd7e-3ff4045a66fd",
 		"name": "backend",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "27684870",
-		"_collection_link": "https://bold-crescent-706293.postman.co/workspace/chouarefamira~2d744b97-91a1-48a6-a762-4f89727340eb/collection/27684870-64c541e3-96d9-4aaa-9ab2-7c1a36b585a4?action=share&source=collection_link&creator=27684870"
+		"_exporter_id": "37434683"
 	},
 	"item": [
 		{
@@ -350,6 +349,14 @@
 						"siteweb"
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": []
 			},
 			"response": []
 		}

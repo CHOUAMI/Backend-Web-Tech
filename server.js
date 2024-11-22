@@ -8,6 +8,7 @@ import categoryRoutes from './routes/categoryRoutes.js';
 import jeuxRoutes from  './routes/jeuxRoutes.js';
 import sitewebRoutes from './routes/sitewebRoutes.js';
 import rolesRoutes from './routes/rolesRoutes.js';
+import verifierToken from './authentification/verifierToken.js';  // Assure-toi du bon chemin d'importation
 
 dotenv.config();
 
