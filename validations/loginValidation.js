@@ -1,6 +1,6 @@
 import { body } from "express-validator"
- 
- 
+
+
 const loginRules = [
     body('email').exists().withMessage('email obligatoire').isEmail().withMessage("ceci n'est pas un email"),
     body('mot_de_passe').isString()
@@ -10,5 +10,5 @@ const loginRules = [
         .matches(/[A-Z]/).withMessage('au moins une lettre majuscule')
         .matches(/[!@#$%^&*(),.?":{}|<>]/).withMessage('au moins un caractere special')
 ]
- 
+
 export default loginRules

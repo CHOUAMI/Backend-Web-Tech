@@ -1,11 +1,17 @@
 import { body, param } from "express-validator";
+
  
+
+ 
+
+
 //Regex pour le nom et prenom
 const nameRegex =/^[a-zA-Z]{4,}$/ // /^(([A-Za-z]+[\-\']?)*([A-Za-z]+)?\s)+([A-Za-z]+[\-\']?)*([A-Za-z]+)?$/
- 
+
 //On peut aussi utiliser une regex pour le mot de passe
 const mdpRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$/
- 
+
+
 const userRules = [
     body('nom').matches(nameRegex).withMessage("le nom n'est pas conforme"),
    
@@ -19,6 +25,11 @@ const userRules = [
  
     param('id').optional().isInt({ min: 1 }).withMessage("l'id doit etre un entier positif")
  
-]
+
  
+
+  
+
+]
+
 export default userRules
