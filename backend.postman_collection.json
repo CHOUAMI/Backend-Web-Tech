@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "64c541e3-96d9-4aaa-9ab2-7c1a36b585a4",
+		"_postman_id": "783f1b9a-f953-487d-b124-256792f8c64f",
 		"name": "backend",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "27684870",
-		"_collection_link": "https://bold-crescent-706293.postman.co/workspace/chouarefamira~2d744b97-91a1-48a6-a762-4f89727340eb/collection/27684870-64c541e3-96d9-4aaa-9ab2-7c1a36b585a4?action=share&source=collection_link&creator=27684870"
+		"_exporter_id": "37434683"
 	},
 	"item": [
 		{
@@ -130,6 +129,15 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\":4 ,\r\n        \"titre\": \"Site E\",\r\n        \"description\": \" site  web e \",\r\n        \"userId\": 4\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "http://localhost:5000/api/projets",
 					"protocol": "http",
@@ -184,7 +192,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"nom\": \"Utilisateur Exemple\",\r\n  \"email\": \"exemple@example.com\",\r\n  \"motDePasse\": \"monMotDePasse\",\r\n  \"RoleId\": 1\r\n}\r\n",
+					"raw": "{ \"id\":5,\r\n  \"nom\": \"alya\",\r\n  \"email\": \"alya5@example.com\",\r\n  \"motDePasse\": \"alya\",\r\n  \"RoleId\": 5\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -348,6 +356,36 @@
 					"path": [
 						"api",
 						"siteweb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\"email\": \"alya@example.com\",\r\n  \"motDePasse\": \"alya\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"login"
 					]
 				}
 			},
