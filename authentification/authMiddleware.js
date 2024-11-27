@@ -12,7 +12,7 @@ const authMiddleware = async (req, res, next) => {
     const token = authHeader.replace('Bearer ', '');
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     app.use((req, res) => {
-      res.status(404).json({ message: 'Resource not found' });
+      res.status(404).json({ message: 'Resource not found mmmmmmmm' });
     });
     
 

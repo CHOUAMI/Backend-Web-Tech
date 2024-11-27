@@ -10,11 +10,7 @@
   "author": "amira-yasmine-hatim",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "bcrypt": "^5.1.1",
-=======
-    "bcryptjs": "^2.4.3",
->>>>>>> 21664f0ab77aa3857491fdddbb3b093389324a90
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",

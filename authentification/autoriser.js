@@ -1,4 +1,8 @@
-import { User } from '../models/users.js';
+
+
+import { User } from '../models/users.js';// Importer le modèle User
+  
+
 
 const autoriser = (roles) => async (req, res, next) => {
     try {

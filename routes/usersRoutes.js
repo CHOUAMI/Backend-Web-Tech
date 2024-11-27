@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { getUsers, createUser } from '../controllers/usersController.js';
-import { login } from '../authentification/login.js';
+import login from '../authentification/login.js';
 const usersRoutes = Router();
 
 usersRoutes.get('/', getUsers);

@@ -9,12 +9,9 @@ import categoryRoutes from './routes/categoryRoutes.js';
 import jeuxRoutes from './routes/jeuxRoutes.js';
 import sitewebRoutes from './routes/sitewebRoutes.js';
 import rolesRoutes from './routes/rolesRoutes.js';
-<<<<<<< HEAD
-import authRoutes from './routes/auth.js';
-import loginRouter from './authentification/login.js'; // Adjust the path as necessary
-=======
-import verifierToken from './authentification/verifierToken.js';  // Assure-toi du bon chemin d'importation
->>>>>>> 21664f0ab77aa3857491fdddbb3b093389324a90
+import auth  from './routes/auth.js';
+import loginRouter from './authentification/login.js';
+import verifierToken from './authentification/verifierToken.js';
 
 dotenv.config();
 
@@ -29,8 +26,8 @@ app.use('/api/users', usersRoutes);
 app.use('/api/jeux', jeuxRoutes);
 app.use('/api/roles', rolesRoutes);
 app.use('/api/siteweb', sitewebRoutes);
-app.use('/auth', authRoutes);
-app.use('/api', loginRouter); // Ensure the base URL matches the Postman request
+app.use('/api/auth', auth);
+app.use('/api', loginRouter);
 
 app.post('/auth/login', (req, res) => {
   // Handle login logic here
