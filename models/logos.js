@@ -6,24 +6,25 @@ const Logos = sequelize.define('Logos', {
   id: {
     type: DataTypes.BIGINT,
     autoIncrement: true,
-    primaryKey: true
+    primaryKey: true,
   },
   logoUrl: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: false,
   },
   projetId: {
     type: DataTypes.BIGINT,
+    allowNull: true,
     references: {
-      model: Projet,
-      key: 'id'
+      model: 'projets',
+      key: 'id',
     },
     onDelete: 'CASCADE',
-    onUpdate: 'CASCADE'
-  }
+    onUpdate: 'CASCADE',
+  },
 }, {
   tableName: 'Logos',
-  timestamps: false
+  timestamps: false,
 });
 
 Logos.belongsTo(Projet, { foreignKey: 'projetId', onDelete: 'CASCADE' });
